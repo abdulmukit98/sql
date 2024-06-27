@@ -48,6 +48,7 @@ create table student(
 ```
 
 - **Create Table With Default Values**
+
 ```
 create table student(
     student_id int,
@@ -63,6 +64,7 @@ select * from student;
 ```
 
 #### Auto Increment Primary key
+
 ```
     create table student(
         student_id int auto_increment, 
