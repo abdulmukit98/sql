@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SQL Syntax</title>
+    <header>
+      {% for page in site.pages %}
+        <a href={{ page.filename }}>{{ page.title }}</a>
+      {% endfor %}
+    </header>
+  </head>
+  <body>
+    {{ content }}
+  </body>
+  
+</html>
