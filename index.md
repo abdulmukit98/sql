@@ -99,3 +99,10 @@ create table student(
     where student_id = 1;
 
 ```
+
+#### Delete Queries
+```
+    delete from student 
+    where student_id = 3;
+
+```
