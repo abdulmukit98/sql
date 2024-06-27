@@ -89,4 +89,10 @@ create table student(
     update student 
     set major='Bio' where major = 'Biology';
     select * from student;
+
+    update student 
+    set major='Biochemestry'
+    where major = 'Bio' or major = "Chemistry";
+
+
 ```
