@@ -51,18 +51,17 @@ create table student(
 - **Create Table With Default Values**
 
 ```
-
-create table student(
-    student_id int,
-    name varchar(20) not null,
-    major varchar(20) default 'undecided',
-    primary key(student_id)
-);
-show tables;
-
-// no major 
-insert into student (student_id, name) values(4, 'Perry');
-select * from student;
+    create table student(
+        student_id int,
+        name varchar(20) not null,
+        major varchar(20) default 'undecided',
+        primary key(student_id)
+    );
+    show tables;
+    
+    // no major 
+    insert into student (student_id, name) values(4, 'Perry');
+    select * from student;
 
 ```
 
