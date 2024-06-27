@@ -4,7 +4,8 @@ layout: template
 filename: index
 --- 
 
-### DB Creation
+## Basic SQL Syntax
+#### DB Creation
 
 ```
 show databases;
@@ -16,7 +17,7 @@ show databases;
 show tables;
 ```
 
-### Create Table
+#### Create Table
 ```
 create table student(
     student_id int,
