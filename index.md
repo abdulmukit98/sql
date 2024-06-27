@@ -4,5 +4,14 @@ layout: template
 filename: index
 --- 
 
-### Hello World
-Project Haleon Ongoing
+### DB Creation
+
+```
+show databases;
+create database mydb;
+use mydb;
+
+drop database mydb;
+show databases;
+show tables;
+```
