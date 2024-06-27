@@ -25,6 +25,7 @@ create table student(
     primary key (student_id)
 );
 show tables;
+drop table student;
 ```
 
 - **Inserting Data**
