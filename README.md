@@ -5,7 +5,7 @@ Site Live at: <a href="https://abdulmukit98.github.io/sql"> Website Presentation
 ## Basic SQL Syntax
 ### DB Creation
 
-```
+```sql
 show databases;
 create database mydb;
 use mydb;
@@ -16,7 +16,7 @@ show tables;
 ```
 
 ### Create Table
-```
+```sql
 create table student(
     student_id int,
     name varchar(20),
@@ -38,7 +38,7 @@ create table student(
 
 - **Inserting Data**
 
-```
+```sql
     insert into student values(1 , 'Jack', 'Biology');
     insert into student values(2, 'Kate', 'Sociology');
     insert into student values(3, 'Clair', "Science");
@@ -48,7 +48,7 @@ create table student(
 
 - **Create Table With Default Values**
 
-```
+```sql
     create table student(
         student_id int,
         name varchar(20) not null,
@@ -65,7 +65,7 @@ create table student(
 
 ### Auto Increment Primary key
 
-```
+```sql
 
     create table student(
         student_id int auto_increment, 
@@ -83,7 +83,7 @@ create table student(
 
 ### Update a column value
 
-```
+```sql
     update student 
     set major='Bio' where major = 'Biology';
     select * from student;
@@ -99,7 +99,7 @@ create table student(
 ```
 
 ### Delete Queries
-```
+```sql
     delete from student 
     where student_id = 3;
 
