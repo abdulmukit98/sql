@@ -25,3 +25,10 @@ First sort by major. If duplicate major, sort by id
   select * from student
   where major="CSE" or major="EEE";
 ````
+
+#### Not Equal
+  ````sql
+  select * from student
+  where major <> "CSE";
+````
+
