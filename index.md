@@ -19,7 +19,7 @@ show tables;
 ### Create Table
 ```
 create table student(
-  	student_id int,
+    student_id int,
     name varchar(20),
     major varchar(20),
     primary key (student_id)
@@ -27,7 +27,8 @@ create table student(
 show tables;
 ```
 
-- Inserting Data
+- **Inserting Data**
+
 ```
     insert into student values(1 , 'Jack', 'Biology');
     insert into student values(2, 'Kate', 'Sociology');
