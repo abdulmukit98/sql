@@ -1,6 +1,7 @@
 .footer { 
     text-align: center;
-    position: absolute; 
+    position: relative; 
     bottom: 40px; 
-    z-index: 10;
+    height:60px;   /* Height of the footer */
+    background:#6cf;
 }
