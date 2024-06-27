@@ -105,4 +105,7 @@ create table student(
     delete from student 
     where student_id = 3;
 
+    // delete everything
+    delete from student;
+
 ```
