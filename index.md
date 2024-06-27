@@ -45,11 +45,13 @@ create table student(
     insert into student values(2, 'Kate', 'Sociology');
     insert into student values(3, 'Clair', "Science");
     select * from student;
+
 ```
 
 - **Create Table With Default Values**
 
 ```
+
 create table student(
     student_id int,
     name varchar(20) not null,
@@ -61,11 +63,13 @@ show tables;
 // no major 
 insert into student (student_id, name) values(4, 'Perry');
 select * from student;
+
 ```
 
 #### Auto Increment Primary key
 
 ```
+
     create table student(
         student_id int auto_increment, 
         name varchar(20) not null,
@@ -77,5 +81,13 @@ select * from student;
     insert into student (name, major) values('Kate', "CS");
     insert into student (name, major) values('Lorem', "EEE");
     select * from student;
+
 ```
 
+#### Update a column value
+
+```
+    update student 
+    set major='Bio' where major = 'Biology';
+    select * from student;
+```
