@@ -3,9 +3,18 @@
   <head>
     <title>SQL Syntax</title>
     <header>
-      {% for page in site.pages %}
-        <a href={{ page.filename }}>{{ page.title }}</a>
-      {% endfor %}
+
+      <div class="site-info">
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <p class="site-description">{{ site.description }}</p>
+      </div>
+      
+      <nav>
+        {% for page in site.pages %}
+          <a href={{ page.filename }}>{{ page.title }}</a>
+        {% endfor %}
+      </nav>
+      
     </header>
   </head>
   <body>
