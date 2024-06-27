@@ -61,3 +61,19 @@ show tables;
 insert into student (student_id, name) values(4, 'Perry');
 select * from student;
 ```
+
+#### Auto Increment Primary key
+```
+    create table student(
+        student_id int auto_increment, 
+        name varchar(20) not null,
+        major varchar(20) default 'undecided',
+        primary key(student_id)
+    );
+    
+    insert into student (name, major) values('Perry', "Sociology");
+    insert into student (name, major) values('Kate', "CS");
+    insert into student (name, major) values('Lorem', "EEE");
+    select * from student;
+```
+
