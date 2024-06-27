@@ -32,3 +32,8 @@ First sort by major. If duplicate major, sort by id
   where major <> "CSE";
 ````
 
+#### IN
+````sql
+  select * from student
+  where name in('jake', 'lira', 'tom');
+````
