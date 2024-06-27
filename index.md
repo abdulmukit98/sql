@@ -26,6 +26,15 @@ create table student(
 );
 show tables;
 drop table student;
+
+
+create table student(
+	student_id int,
+    name varchar(20) not null,       
+    major varchar(20) unique,
+	primary key (student_id)
+);
+
 ```
 
 - **Inserting Data**
