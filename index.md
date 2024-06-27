@@ -25,5 +25,12 @@ create table student(
     primary key (student_id)
 );
 show tables;
+```
 
+- Inserting Data
+```
+    insert into student values(1 , 'Jack', 'Biology');
+    insert into student values(2, 'Kate', 'Sociology');
+    insert into student values(3, 'Clair', "Science");
+    select * from student;
 ```
