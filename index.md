@@ -1,7 +1,8 @@
 ---
-title: PAGE TITLE HERE
+title: Index 
 layout: template
-filename: NAME OF THIS .md FILE HERE
+filename: index
 --- 
 
 ### Hello World
+Project Haleon Ongoing
