@@ -93,6 +93,9 @@ create table student(
     update student 
     set major='Biochemestry'
     where major = 'Bio' or major = "Chemistry";
-
+    
+    update student 
+    set name = "Tom", major = "Philosophy"
+    where student_id = 1;
 
 ```
