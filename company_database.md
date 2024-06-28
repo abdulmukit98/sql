@@ -70,7 +70,7 @@ but we can't define them now since the
 the corresponding table has not been created yet.
 
 ````
-
+<br>
 Create **Branch_table** with **manager_id foreign key** from **employee table**
 ````
 create table branch(
@@ -81,7 +81,7 @@ create table branch(
     foreign key(mgr_id) references employee(emp_id) on delete set null
 );
 ````
-
+<br>
 Add foreign key to **employee table branch_id** from branch table and **employee table super_id** from **itself** 
 ````
 	alter table employee 
@@ -93,6 +93,16 @@ Add foreign key to **employee table branch_id** from branch table and **employee
 	add foreign key(super_id)
 	references employee(emp_id)
         on delete set null;
+````
+<br>
+Add Client Table
+````
+	create table client(
+	client_id int primary key,
+	client_name varchar(40),
+	branch_id int,
+	foreign key(branch_id) references branch(branch_id) on delete set null
+	);
 ````
 
 <br><br><br>
