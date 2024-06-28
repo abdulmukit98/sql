@@ -53,7 +53,7 @@ filename: company_database
 <br><br>
 ### Creating Tables
 **Employee Table**
-```
+```sql
 create table employee (
     emp_id int primary key,
     first_name varchar(40),
@@ -74,7 +74,7 @@ the corresponding table has not been created yet.
 
 Create **Branch_table** with **manager_id foreign key** from **employee table**
 
-```
+```sql
 create table branch(
     branch_id int primary key,
     branch_name varchar(40),
@@ -87,7 +87,7 @@ create table branch(
 <br>
 
 Add foreign key to **employee table branch_id** from branch table and **employee table super_id** from **itself** 
-```
+```sql
 	alter table employee 
 	add foreign key(branch_id)
 	references branch(branch_id)
@@ -102,7 +102,7 @@ Add foreign key to **employee table branch_id** from branch table and **employee
 <br>
 
 Add Client Table
-```
+```sql
 	create table client(
 	client_id int primary key,
 	client_name varchar(40),
