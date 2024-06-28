@@ -53,7 +53,7 @@ filename: company_database
 <br><br>
 ### Creating Tables
 **Employee Table**
-````
+```
 create table employee (
     emp_id int primary key,
     first_name varchar(40),
@@ -69,10 +69,12 @@ super_id and branch_id are foreign key
 but we can't define them now since the
 the corresponding table has not been created yet.
 
-````
+```
 <br>
+
 Create **Branch_table** with **manager_id foreign key** from **employee table**
-````
+
+```
 create table branch(
     branch_id int primary key,
     branch_name varchar(40),
@@ -80,10 +82,12 @@ create table branch(
     mgr_start_date date,
     foreign key(mgr_id) references employee(emp_id) on delete set null
 );
-````
+```
+
 <br>
+
 Add foreign key to **employee table branch_id** from branch table and **employee table super_id** from **itself** 
-````
+```
 	alter table employee 
 	add foreign key(branch_id)
 	references branch(branch_id)
@@ -92,17 +96,19 @@ Add foreign key to **employee table branch_id** from branch table and **employee
 	alter table employee
 	add foreign key(super_id)
 	references employee(emp_id)
-        on delete set null;
-````
+	on delete set null;
+```
+
 <br>
+
 Add Client Table
-````
+```
 	create table client(
 	client_id int primary key,
 	client_name varchar(40),
 	branch_id int,
 	foreign key(branch_id) references branch(branch_id) on delete set null
 	);
-````
+```
 
 <br><br><br>
