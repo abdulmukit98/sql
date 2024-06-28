@@ -55,12 +55,12 @@ filename: company_database
 **Employee Table**
 ````
 create table employee (
-  	emp_id int primary key,
+    emp_id int primary key,
     first_name varchar(40),
     last_name varchar(40),
-	  birth_date date,
+    birth_date date,
     sex varchar(1),
-  	salary int,
+    salary int,
     super_id int, 
     branch_id int
   );
@@ -74,12 +74,25 @@ the corresponding table has not been created yet.
 Create **Branch_table** with **manager_id foreign key** from **employee table**
 ````
 create table branch(
-	branch_id int primary key,
+    branch_id int primary key,
     branch_name varchar(40),
-	mgr_id int,
+    mgr_id int,
     mgr_start_date date,
     foreign key(mgr_id) references employee(emp_id) on delete set null
 );
+````
+
+Add foreign key to **employee table branch_id** from branch table and **employee table super_id** from **itself** 
+````
+	alter table employee 
+	add foreign key(branch_id)
+	references branch(branch_id)
+	on delete set null;
+	
+	alter table employee
+	add foreign key(super_id)
+	references employee(emp_id)
+        on delete set null;
 ````
 
 <br><br><br>
