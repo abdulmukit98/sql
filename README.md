@@ -2,6 +2,7 @@
 
 Site Live at: <a href="https://abdulmukit98.github.io/sql"> Website Presentation </a> <br><br>
 Part-2: [Basic Query](https://github.com/abdulmukit98/sql/blob/main/basic_queries.md)
+Part-3: [Company Database](https://github.com/abdulmukit98/sql/blob/main/company_database.md)
 
 ## Basic SQL Syntax
 ### DB Creation
