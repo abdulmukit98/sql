@@ -65,9 +65,9 @@ create table employee (
     branch_id int
   );
 
-super_id and branch_id are foreign key
-but we can't define them now since the
-the corresponding table has not been created yet.
+-- super_id and branch_id are foreign key
+-- but we can't define them now since the
+-- the corresponding table has not been created yet.
 
 ```
 <br>
