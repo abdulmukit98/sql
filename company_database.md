@@ -141,6 +141,7 @@ create table branch_supplier(
 <br>
 
 ## Data
-![Company Database](https://github.com/abdulmukit98/sql/assets/56398175/1e897f3e-aea0-4c2b-ae66-69094c956589)
+<img src="https://github.com/abdulmukit98/sql/assets/56398175/1e897f3e-aea0-4c2b-ae66-69094c956589" width="1200px">
+
 
 <br><br>
