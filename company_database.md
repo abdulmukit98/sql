@@ -111,4 +111,20 @@ Add Client Table
 	);
 ```
 
+<br>
+
+Add works_with table. Here **empid and clientid** both primary key also they are foreign key.
+````sql
+create table works_with(
+    emp_id int,
+    client_id int,
+    total_sales int,
+    primary key(emp_id, client_id),
+    foreign key(emp_id) references employee(emp_id) on delete cascade,
+    foreign key(client_id) references client(client_id) on delete cascade
+);
+
+````
+
+
 <br><br><br>
