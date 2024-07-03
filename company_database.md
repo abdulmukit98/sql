@@ -193,4 +193,18 @@ insert into **branch_supplier** table
 	insert into branch_supplier values(3, "Stamford Labels", "Custom Forms");
 ````
 
+insert into **works_with** table
+````sql
+	insert into works_with values(105, 400, 55000);
+	insert into works_with values(102, 401, 267000);
+	insert into works_with values(108, 402, 22500);
+	insert into works_with values(107, 403, 5000);
+	insert into works_with values(108, 403, 12000);
+	insert into works_with values(105, 404, 33000);
+	insert into works_with values(107, 405, 26000);
+	insert into works_with values(102, 406, 15000);
+	insert into works_with values(105, 406, 130000);
+
+````
+
 <br><br>
