@@ -182,4 +182,15 @@ insert into **client table**
 	insert into client values(406, "FedEx", 2);
 ````
 
+insert into **branch_supplier** table
+````sql
+	insert into branch_supplier values(2, "Hammer Mill", "Paper");
+	insert into branch_supplier values(2, "Uni-ball", "Writing Utensils");
+	insert into branch_supplier values(3, "Patriot Paper", "Paper");
+	insert into branch_supplier values(2, "J.T. Forms & Labels", "Custom Forms");
+	insert into branch_supplier values(3, "Uni-ball", "Writing Utensils");
+	insert into branch_supplier values(3, "Hammer Mill", "Paper");
+	insert into branch_supplier values(3, "Stamford Labels", "Custom Forms");
+````
+
 <br><br>
