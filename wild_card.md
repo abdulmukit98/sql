@@ -14,7 +14,7 @@ fetch row where client_name contain "LLC" keyword
    select * from client
    where client_name like '%llc';
 
-   % mean any character in the position
+   % mean any number of character in the position
    - mean a single character
 ````
 
