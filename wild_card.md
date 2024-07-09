@@ -24,5 +24,8 @@ find employee whose birth date is october(10)
    where birth_date like '____-10%';
 
    first 4 character _ _ _ _ then - then 10 % (remaining)
+
+   select * from client where client_name like "%school%"
 ````
+
 
