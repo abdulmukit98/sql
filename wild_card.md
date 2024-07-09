@@ -28,4 +28,14 @@ find employee whose birth date is october(10)
    select * from client where client_name like "%school%"
 ````
 
+## Union
+Multiple queries together
+````sql
+   select client_name from client
+   union
+   select birth_date from employee
+   union 
+   select first_name from employee
+   ;
+````
 
