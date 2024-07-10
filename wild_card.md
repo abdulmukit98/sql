@@ -40,11 +40,14 @@ Multiple queries together
 ````
 
 ## JOIN
+We can use **ON** instead of **WHERE** if single query comparison
 ````sql
       select employee.emp_id, employee.first_name, branch.branch_name 
       from employee
       join branch
       where employee.emp_id = branch.mgr_id;
+
+      -- on employee.emp_id = branch.mgr_id
 
 ````
 
