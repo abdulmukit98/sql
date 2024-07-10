@@ -47,3 +47,13 @@ Multiple queries together
       where employee.emp_id = branch.mgr_id;
 ````
 
+Find all employee who work with client from works_with table
+````sql
+
+      select employee.emp_id, employee.first_name, client.client_id, client.client_name , works_with.total_sales	
+      from employee
+      join client, works_with
+      where employee.emp_id = works_with.emp_id and client.client_id = works_with.client_id	
+      ;
+
+````
