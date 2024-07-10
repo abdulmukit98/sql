@@ -83,3 +83,31 @@ Query inside query
    );
 
 ````
+
+## On Delete
+
+if a foreign key is set to **on delete set null**,  <br>
+whenever the primary row is deleted, the foreign key is set to null.
+<br><br>
+if a foreign key is set to **on delete cascade**, <br>
+whenever the primary key row is deleted, the foreign key row also deleted <br><br>
+
+````sql
+create table works_with(
+    emp_id int,
+    client_id int,
+    total_sales int,
+    primary key(emp_id, client_id),
+    foreign key(emp_id) references employee(emp_id) on delete cascade,
+    foreign key(client_id) references client(client_id) on delete cascade
+);
+
+
+create table client(
+	client_id int primary key,
+	client_name varchar(40),
+	branch_id int,
+	foreign key(branch_id) references branch(branch_id) on delete set null
+	);
+
+````
