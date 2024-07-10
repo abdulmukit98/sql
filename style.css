@@ -27,6 +27,15 @@ td{
     border:1px solid #000000;
 }
 
+.site-info {
+  float: left;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
 
 .site-name {
   margin: 0;
