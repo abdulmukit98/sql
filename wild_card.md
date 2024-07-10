@@ -104,10 +104,19 @@ create table works_with(
 
 
 create table client(
-	client_id int primary key,
-	client_name varchar(40),
-	branch_id int,
-	foreign key(branch_id) references branch(branch_id) on delete set null
-	);
+    client_id int primary key,
+    client_name varchar(40),
+    branch_id int,
+    foreign key(branch_id) references branch(branch_id) on delete set null
+);
 
+
+If a foreign key is also the primary key it must be on delete cascade
+create table branch_supplier(
+    branch_id int,
+    supplier_name varchar(40),
+    supply_type varchar(40),
+    primary key(branch_id, supplier_name),
+    foreign key(branch_id) references branch(branch_id) on delete cascade
+);
 ````
