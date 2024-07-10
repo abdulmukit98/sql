@@ -67,3 +67,19 @@ Find all employee and corresponding branch
       where employee.branch_id = branch.branch_id;
 
 ````
+
+## Nested Query
+Query inside query
+
+````sql
+   find all employee whose branch is which branch manager id 102 (branch 2)
+
+   select employee.first_name 
+   from employee
+   where employee.branch_id in (
+       select branch.branch_id 
+       from branch
+       where branch.mgr_id = 102
+   );
+
+````
